@@ -1,0 +1,20 @@
+﻿UsvSimulator
+
+
+winexe
+C#
+.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Debug\
+SyDLab.Usv.Simulator.Presentation
+none
+false
+DEBUG;TRACE
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\App.xaml
+20-1277749446
+
+28-1383135702
+144-1645488303
+Resources\Markers\DetectedMineMarker.xaml;Resources\Markers\EndMarker.xaml;Resources\Markers\MineMarker.xaml;Resources\Markers\StartMarker.xaml;Resources\Markers\PortMarker.xaml;Resources\Markers\MyShipMarker.xaml;Resources\Markers\TargetShipMarker.xaml;Resources\Markers\WaypointMarker.xaml;Views\GraphView.xaml;Views\MapView.xaml;Views\ModelBuilderView.xaml;Views\MonitorView.xaml;Views\ObstacleEditorWindow.xaml;Views\PlatformEditorWindow.xaml;Views\PropertyView.xaml;Views\RadarView.xaml;Views\SettingView.xaml;Views\ShellWindow.xaml;Views\ShipDynamicsView.xaml;Views\TerminalView.xaml;
+
+False
+

@@ -1,0 +1,3785 @@
+{
+  "$id": "1",
+  "$type": "SyDLab.Usv.Simulator.Domain.Models.Project, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "DisplayName": "Empty Project",
+  "MyShips": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.MyShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": [
+      {
+        "$id": "2",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.MyShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "_hullParameter": {
+          "$id": "3",
+          "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.HullParameter, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "Lpp": 9.947,
+          "Breadth": 3.32,
+          "Draft": 0.55,
+          "Displacement": 8.456,
+          "xG": 0.0,
+          "Cb": 0.465556,
+          "NumRudder": 1,
+          "DP": 0.56,
+          "HR": 0.68,
+          "AR": 0.37,
+          "Xuu": -0.00014,
+          "tP": 0.18,
+          "tR": 0.3,
+          "aH": 0.312,
+          "xH": -0.464,
+          "C1": 2.0,
+          "C2p": 1.6,
+          "C2n": 1.1,
+          "gammaRp": 0.506,
+          "gammaRn": 0.506,
+          "lR": -0.71,
+          "epsilon": 1.09,
+          "kappa": 0.425,
+          "f_alpha": 2.425,
+          "k0": 0.482,
+          "k1": -0.419,
+          "k2": 0.0,
+          "wP0": 0.35,
+          "rho": 1.025
+        },
+        "_componentProperty": {
+          "$id": "4",
+          "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.ComponentProperty, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "DriveTrainInertia": 0.1,
+          "MaxRpm": 3850.0,
+          "MinRpm": 100.0
+        },
+        "_parrent": null,
+        "_children": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Group, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_name": "",
+        "_id": "236a877e-2ee7-4a83-b6a3-f584ffbdad99",
+        "_remarks": null,
+        "_isExpanded": false,
+        "_isSelected": false,
+        "_isVisualized": true,
+        "HullParameter": {
+          "$ref": "3"
+        },
+        "ComponentProperty": {
+          "$ref": "4"
+        },
+        "RudderAngle": 0.0,
+        "RudderAngleDot": 0.0,
+        "LimitOfRudderAngle": 35.0,
+        "LimitOfRudderAngleDot": 5.0,
+        "Radius": 1.25,
+        "Interval": 2.0,
+        "Resolution": 50.0,
+        "SeaClutter": false,
+        "InitialHeading": -0.019098592463669975,
+        "InitialLon": 126.213229,
+        "InitialLat": 37.286047,
+        "DisplayName": "OS",
+        "ShipType": 0,
+        "Project": {
+          "$ref": "1"
+        },
+        "Speed": 4.5803409901075618,
+        "MaxRpm": 3850.0,
+        "MinRpm": 100.0,
+        "HeadingControlGainP": 1.0,
+        "HeadingControlGainD": 10.0,
+        "SpeedControlGainP": 1000.0,
+        "SpeedControlGainI": 10.0,
+        "SpeedControlGainD": 2500.0,
+        "ModelType": "DANV",
+        "IsKijimaUsed": true
+      }
+    ]
+  },
+  "TargetShips": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.TargetShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": [
+      {
+        "$id": "5",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.TargetShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "_rangeDistance": 1000.0,
+        "_isAISExists": true,
+        "_isChangeable": false,
+        "_stdDev": 10.0,
+        "_historyAISData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "6",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "7",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1.4022154053709666,
+                "Y": 2492.6619894535893,
+                "Z": 0.0
+              },
+              "Speed": 7.8815571853852138,
+              "Time": 5.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "8",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "9",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1.9234446770700726,
+                "Y": 2457.7329283599147,
+                "Z": 0.0
+              },
+              "Speed": 8.66307803264972,
+              "Time": 15.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "10",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "11",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -23.32281737419515,
+                "Y": 2424.9299245516454,
+                "Z": 0.0
+              },
+              "Speed": 7.9393211526124823,
+              "Time": 25.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "12",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "13",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -12.9183799676997,
+                "Y": 2364.4032709043372,
+                "Z": 0.0
+              },
+              "Speed": 8.07943963567187,
+              "Time": 36.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "14",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "15",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 21.829809804644309,
+                "Y": 2299.7380680127017,
+                "Z": 0.0
+              },
+              "Speed": 7.9339470507318959,
+              "Time": 46.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "16",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "17",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -7.357220133258223,
+                "Y": 2281.6128569783264,
+                "Z": 0.0
+              },
+              "Speed": 8.0971878506442145,
+              "Time": 57.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "18",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "19",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -0.11450174008314781,
+                "Y": 2250.47140484041,
+                "Z": 0.0
+              },
+              "Speed": 8.212899052040429,
+              "Time": 67.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "20",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "21",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2.7246184195113092,
+                "Y": 2207.292660851409,
+                "Z": 0.0
+              },
+              "Speed": 8.0973416755319576,
+              "Time": 77.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "22",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "23",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -5.54550366401084,
+                "Y": 2159.486050171337,
+                "Z": 0.0
+              },
+              "Speed": 8.3275112500675359,
+              "Time": 87.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "24",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "25",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1.3237878930510383,
+                "Y": 2124.5525554229503,
+                "Z": 0.0
+              },
+              "Speed": 7.8535865427338942,
+              "Time": 97.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            }
+          ]
+        },
+        "_historyRadarData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "26",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "27",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2.587599807590967,
+                "Y": 2487.220364902435,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 5.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "28",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "29",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -6.9138112587224736,
+                "Y": 2478.7218008905829,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 8.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "30",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "31",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -3.8845779486179381,
+                "Y": 2458.4607314678028,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 11.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "32",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "33",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -7.3364925695356593,
+                "Y": 2448.3446476882236,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 14.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "34",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "35",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1.2582451462569444,
+                "Y": 2464.9143754353327,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 17.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "36",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "37",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 3.1817500798021534,
+                "Y": 2435.707087697157,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 20.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "38",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "39",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -5.3852524977803524,
+                "Y": 2431.434113456879,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 23.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "40",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "41",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -8.2126076895016489,
+                "Y": 2380.2964570917875,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 26.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "42",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "43",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -16.665596685743122,
+                "Y": 2385.2524789514582,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 29.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "44",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "45",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 4.66272415185245,
+                "Y": 2364.7141677643285,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 32.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "46",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "47",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 15.908623272049629,
+                "Y": 2383.3920958182412,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 35.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "48",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "49",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -21.491499806935433,
+                "Y": 2343.7634337051581,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 38.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "50",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "51",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -3.9000814563740285,
+                "Y": 2365.836847694703,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 41.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "52",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "53",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 8.4870400367663859,
+                "Y": 2331.4843896926436,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 44.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "54",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "55",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -18.209450666156634,
+                "Y": 2331.3765820509916,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 47.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "56",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "57",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -22.697724338186426,
+                "Y": 2316.4490712551037,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 50.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "58",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "59",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -15.034195190731632,
+                "Y": 2290.0651593221692,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 53.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "60",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "61",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -12.410907245038564,
+                "Y": 2293.1722901206726,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 56.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "62",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "63",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 14.01370626252686,
+                "Y": 2286.5745195683053,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 59.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "64",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "65",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 10.76374650122885,
+                "Y": 2258.4279026836671,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 62.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "66",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "67",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 13.40997689071459,
+                "Y": 2242.6030743148872,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 65.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "68",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "69",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -11.79118383219628,
+                "Y": 2237.7555962103843,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 68.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "70",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "71",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -6.0599776088488948,
+                "Y": 2217.9193825237726,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 71.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "72",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "73",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -2.4267081815062013,
+                "Y": 2212.1031775436786,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 74.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "74",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "75",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -15.195835964028641,
+                "Y": 2212.6845062293687,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 77.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "76",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "77",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 6.7059417638546623,
+                "Y": 2174.8610982478531,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 80.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "78",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "79",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -16.995451493867026,
+                "Y": 2184.0828199999469,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 83.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "80",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "81",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 6.8128088708649681,
+                "Y": 2165.6374435342773,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 86.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "82",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "83",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 32.708895564872222,
+                "Y": 2150.2998396585836,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 89.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "84",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "85",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -6.78163698378423,
+                "Y": 2127.5020777694372,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 92.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "86",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 180.0,
+              "Position": {
+                "$id": "87",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1.3242719004031229,
+                "Y": 2133.125449123992,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 95.0,
+              "Platform": {
+                "$ref": "5"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            }
+          ]
+        },
+        "_historyFusedData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_length": 300.0,
+        "_desiredHeading": 0.0,
+        "_angularVelocity": 0.0,
+        "_mmsi": 111,
+        "_parrent": null,
+        "_children": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Group, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_name": "",
+        "_id": "911d9a44-3a0d-407a-b9b9-f52d93903e76",
+        "_remarks": null,
+        "_isExpanded": false,
+        "_isSelected": false,
+        "_isVisualized": true,
+        "InitialHeading": 180.0,
+        "InitialY": 2500.0000000001628,
+        "InitialX": 0.0,
+        "DisplayName": "TS00",
+        "ShipType": 0,
+        "Project": {
+          "$ref": "1"
+        },
+        "Speed": 8.0,
+        "MaxRpm": 80.0,
+        "MinRpm": 30.0,
+        "HeadingControlGainP": 1.0,
+        "HeadingControlGainD": 10.0,
+        "SpeedControlGainP": 1.0,
+        "SpeedControlGainI": 3.0,
+        "SpeedControlGainD": 10.0,
+        "ModelType": null,
+        "IsKijimaUsed": false
+      },
+      {
+        "$id": "88",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.TargetShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "_rangeDistance": 1000.0,
+        "_isAISExists": true,
+        "_isChangeable": false,
+        "_stdDev": 10.0,
+        "_historyAISData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "89",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "90",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2204.736311110034,
+                "Y": 1500.9118389977764,
+                "Z": 0.0
+              },
+              "Speed": 8.0475131694124755,
+              "Time": 1.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "91",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "92",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2167.4582843695102,
+                "Y": 1491.514259482552,
+                "Z": 0.0
+              },
+              "Speed": 7.7632087213116785,
+              "Time": 11.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "93",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "94",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2120.9372545859819,
+                "Y": 1498.2611132650281,
+                "Z": 0.0
+              },
+              "Speed": 8.0265303749130883,
+              "Time": 21.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "95",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "96",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2069.1979441529097,
+                "Y": 1515.3091085755696,
+                "Z": 0.0
+              },
+              "Speed": 7.9126145449962975,
+              "Time": 31.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "97",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "98",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2007.60490721149,
+                "Y": 1497.3257319523991,
+                "Z": 0.0
+              },
+              "Speed": 8.3477780147688971,
+              "Time": 41.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "99",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "100",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1999.8289726880766,
+                "Y": 1489.2808731642613,
+                "Z": 0.0
+              },
+              "Speed": 8.1132443379304853,
+              "Time": 51.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "101",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "102",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1954.8765796036316,
+                "Y": 1488.1196050865428,
+                "Z": 0.0
+              },
+              "Speed": 7.7091068481937146,
+              "Time": 61.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "103",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "104",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1898.4118189680096,
+                "Y": 1504.9128658592113,
+                "Z": 0.0
+              },
+              "Speed": 7.7570741946531037,
+              "Time": 72.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "105",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "106",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1864.0468133320217,
+                "Y": 1503.7290956869415,
+                "Z": 0.0
+              },
+              "Speed": 7.7331489501150488,
+              "Time": 82.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "107",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "108",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1822.5994779012731,
+                "Y": 1500.2455757106422,
+                "Z": 0.0
+              },
+              "Speed": 8.38205792086027,
+              "Time": 92.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            }
+          ]
+        },
+        "_historyRadarData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "109",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "110",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2201.9037843202254,
+                "Y": 1480.80417995344,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 1.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "111",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "112",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2191.0901575978874,
+                "Y": 1493.170173968583,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 4.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "113",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "114",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2158.1971195343544,
+                "Y": 1480.8429596293363,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 7.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "115",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "116",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2165.9468233084053,
+                "Y": 1489.1327921609868,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 10.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "117",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "118",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2140.4778243173896,
+                "Y": 1514.4879430896196,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 13.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "119",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "120",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2140.857994830752,
+                "Y": 1496.4630759083341,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 16.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "121",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "122",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2114.0819653094136,
+                "Y": 1518.9065906077512,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 19.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "123",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "124",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2119.4723060828796,
+                "Y": 1497.3474636465435,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 22.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "125",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "126",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2078.0088258787259,
+                "Y": 1499.9886661410608,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 25.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "127",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "128",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2089.8223729349438,
+                "Y": 1495.1507872972741,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 28.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "129",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "130",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2064.4631757469515,
+                "Y": 1517.3256972283223,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 31.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "131",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "132",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2053.8729056612069,
+                "Y": 1515.5335923734851,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 34.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "133",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "134",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2039.7053649708002,
+                "Y": 1498.7050464057741,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 37.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "135",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "136",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2052.9420760089383,
+                "Y": 1492.4820905516633,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 40.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "137",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "138",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2035.9902353109424,
+                "Y": 1489.3800140412247,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 43.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "139",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "140",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1991.6721979513402,
+                "Y": 1511.7116073699606,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 46.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "141",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "142",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 2004.5059103093652,
+                "Y": 1497.7385292456813,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 49.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "143",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "144",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1973.3524516355628,
+                "Y": 1504.4864153089454,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 52.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "145",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "146",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1987.7989061951939,
+                "Y": 1489.8347736744643,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 55.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "147",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "148",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1941.378902774416,
+                "Y": 1476.3216728299112,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 58.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "149",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "150",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1955.9341351933863,
+                "Y": 1500.5397887528563,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 61.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "151",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "152",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1939.8168701827237,
+                "Y": 1512.7554632323438,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 64.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "153",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "154",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1949.699092047457,
+                "Y": 1477.5917294839319,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 67.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "155",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "156",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1903.7952373807652,
+                "Y": 1501.3838560694364,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 70.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "157",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "158",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1919.7806698494583,
+                "Y": 1488.4365170875767,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 73.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "159",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "160",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1893.8408138360942,
+                "Y": 1520.2168672514074,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 76.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "161",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "162",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1861.5105866831277,
+                "Y": 1505.1328934835092,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 79.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "163",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "164",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1875.1692936152724,
+                "Y": 1491.8073030200451,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 82.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "165",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "166",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1850.0410253713667,
+                "Y": 1478.0121871829506,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 85.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "167",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "168",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1826.2600875911862,
+                "Y": 1493.4552673340866,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 88.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "169",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "170",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1830.5627689109735,
+                "Y": 1507.3202903222639,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 91.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "171",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "172",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1820.4757681997119,
+                "Y": 1498.6507758300884,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 94.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "173",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 270.0,
+              "Position": {
+                "$id": "174",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 1824.2962446461677,
+                "Y": 1481.52781085968,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 97.0,
+              "Platform": {
+                "$ref": "88"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            }
+          ]
+        },
+        "_historyFusedData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_length": 48.0,
+        "_desiredHeading": 0.0,
+        "_angularVelocity": 0.66189348137094339,
+        "_mmsi": 2222,
+        "_parrent": null,
+        "_children": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Group, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_name": "",
+        "_id": "1da06c84-12c6-4b51-9a6f-e5c1ba3ec8fc",
+        "_remarks": null,
+        "_isExpanded": false,
+        "_isSelected": false,
+        "_isVisualized": true,
+        "InitialHeading": 270.0,
+        "InitialY": 1500.000000000256,
+        "InitialX": 2199.9999999999618,
+        "DisplayName": "Target Ship 1",
+        "ShipType": 0,
+        "Project": {
+          "$ref": "1"
+        },
+        "Speed": 8.0,
+        "MaxRpm": 80.0,
+        "MinRpm": 30.0,
+        "HeadingControlGainP": 1.0,
+        "HeadingControlGainD": 10.0,
+        "SpeedControlGainP": 1.0,
+        "SpeedControlGainI": 3.0,
+        "SpeedControlGainD": 10.0,
+        "ModelType": null,
+        "IsKijimaUsed": false
+      },
+      {
+        "$id": "175",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.TargetShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "_rangeDistance": 1000.0,
+        "_isAISExists": true,
+        "_isChangeable": false,
+        "_stdDev": 10.0,
+        "_historyAISData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "176",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "177",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1010.0820327013769,
+                "Y": 1513.1192150745344,
+                "Z": 0.0
+              },
+              "Speed": 7.8969539814933105,
+              "Time": 2.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "178",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "179",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1010.5747621693899,
+                "Y": 1568.1456534788003,
+                "Z": 0.0
+              },
+              "Speed": 7.8639621728052971,
+              "Time": 13.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "180",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "181",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1002.7646315567068,
+                "Y": 1596.3014395812486,
+                "Z": 0.0
+              },
+              "Speed": 8.1391346854349855,
+              "Time": 23.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "182",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "183",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1007.7708081004431,
+                "Y": 1620.5478462104757,
+                "Z": 0.0
+              },
+              "Speed": 7.92043519278531,
+              "Time": 33.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "184",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "185",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1004.507668449619,
+                "Y": 1685.7031668358657,
+                "Z": 0.0
+              },
+              "Speed": 8.0314232912689647,
+              "Time": 43.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "186",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "187",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1003.986581572801,
+                "Y": 1710.8910128181335,
+                "Z": 0.0
+              },
+              "Speed": 7.7888128122413995,
+              "Time": 53.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "188",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "189",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1000.914889699677,
+                "Y": 1755.7070032208323,
+                "Z": 0.0
+              },
+              "Speed": 7.7511123622016163,
+              "Time": 64.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "190",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "191",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1013.1173730297725,
+                "Y": 1785.3155412841966,
+                "Z": 0.0
+              },
+              "Speed": 7.9308356045776893,
+              "Time": 74.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "192",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "193",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1026.9609680415883,
+                "Y": 1845.317233909657,
+                "Z": 0.0
+              },
+              "Speed": 7.6472572516255335,
+              "Time": 85.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "194",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "195",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1023.1876436105518,
+                "Y": 1876.1365657188956,
+                "Z": 0.0
+              },
+              "Speed": 7.9734481446485734,
+              "Time": 95.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            }
+          ]
+        },
+        "_historyRadarData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "196",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "197",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -993.98102027725417,
+                "Y": 1484.9193753556754,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 1.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "198",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "199",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -992.44906079288648,
+                "Y": 1509.630955577524,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 4.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "200",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "201",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1012.9965126497138,
+                "Y": 1509.6493274449831,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 7.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "202",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "203",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -992.90122266895685,
+                "Y": 1530.2847461833394,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 10.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "204",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "205",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1006.0246354532671,
+                "Y": 1567.985483318678,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 13.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "206",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "207",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -993.29887873319888,
+                "Y": 1562.3062023440982,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 16.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "208",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "209",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1007.7293220478313,
+                "Y": 1597.0953032502211,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 19.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "210",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "211",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -989.99339506765966,
+                "Y": 1587.8817624957192,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 22.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "212",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "213",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1019.1112890651075,
+                "Y": 1602.8685511969422,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 25.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "214",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "215",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -994.95215580218394,
+                "Y": 1610.3762585598613,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 28.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "216",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "217",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1007.9657667834706,
+                "Y": 1644.8967546976153,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 31.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "218",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "219",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1006.2104506625092,
+                "Y": 1655.4502360494839,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 34.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "220",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "221",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1008.0324051462101,
+                "Y": 1650.9672762884786,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 37.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "222",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "223",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -982.45010790136632,
+                "Y": 1657.0899066410736,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 40.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "224",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "225",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -987.0563623926563,
+                "Y": 1666.3334163373409,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 43.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "226",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "227",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1019.0288135455527,
+                "Y": 1701.0105958727825,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 46.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "228",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "229",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -993.84951498082194,
+                "Y": 1699.383103955209,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 49.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "230",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "231",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1012.6573874479185,
+                "Y": 1718.4765762251789,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 52.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "232",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "233",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -985.86534668158163,
+                "Y": 1716.1705207974035,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 55.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "234",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "235",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1019.9397638956539,
+                "Y": 1715.0030061595562,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 58.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "236",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "237",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -993.03894526997783,
+                "Y": 1751.5667082892071,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 61.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "238",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "239",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -996.8106240739346,
+                "Y": 1776.1279689754003,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 64.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "240",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "241",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -974.58281600249541,
+                "Y": 1753.3098214336942,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 67.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "242",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "243",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1008.1410844624816,
+                "Y": 1789.4475342259045,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 70.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "244",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "245",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -979.81006578708275,
+                "Y": 1788.8457814507506,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 73.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "246",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "247",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -993.40433559374094,
+                "Y": 1832.971717821287,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 76.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "248",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "249",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1013.3889765400017,
+                "Y": 1830.2333302600946,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 79.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "250",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "251",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -987.38468340115116,
+                "Y": 1829.2533260033363,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 82.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "252",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "253",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1000.1673654383512,
+                "Y": 1827.8037963729475,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 85.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "254",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "255",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -1011.602717011826,
+                "Y": 1855.5924627307893,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 88.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "256",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "257",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -994.9544494853327,
+                "Y": 1881.8030719256724,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 91.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "258",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "259",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -992.69586398988861,
+                "Y": 1885.4791436402027,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 94.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "260",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 0.0,
+              "Position": {
+                "$id": "261",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": -976.52980133672725,
+                "Y": 1880.7017648765,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 97.0,
+              "Platform": {
+                "$ref": "175"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            }
+          ]
+        },
+        "_historyFusedData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_length": 48.0,
+        "_desiredHeading": 0.0,
+        "_angularVelocity": 0.6632494147695831,
+        "_mmsi": 3333,
+        "_parrent": null,
+        "_children": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Group, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_name": "",
+        "_id": "69eaffd9-b5cb-4f60-ae54-c57b498d117e",
+        "_remarks": null,
+        "_isExpanded": false,
+        "_isSelected": false,
+        "_isVisualized": true,
+        "InitialHeading": 0.0,
+        "InitialY": 1500.000000000256,
+        "InitialX": -999.99999999975307,
+        "DisplayName": "Target Ship 2",
+        "ShipType": 0,
+        "Project": {
+          "$ref": "1"
+        },
+        "Speed": 8.0,
+        "MaxRpm": 80.0,
+        "MinRpm": 30.0,
+        "HeadingControlGainP": 1.0,
+        "HeadingControlGainD": 10.0,
+        "SpeedControlGainP": 1.0,
+        "SpeedControlGainI": 3.0,
+        "SpeedControlGainD": 10.0,
+        "ModelType": null,
+        "IsKijimaUsed": false
+      },
+      {
+        "$id": "262",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.TargetShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "_rangeDistance": 1000.0,
+        "_isAISExists": true,
+        "_isChangeable": false,
+        "_stdDev": 10.0,
+        "_historyAISData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "263",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "264",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 787.28591569376283,
+                "Y": 1497.2151809161667,
+                "Z": 0.0
+              },
+              "Speed": 8.1817569246608581,
+              "Time": 3.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "265",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "266",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 748.44374441736,
+                "Y": 1480.2605572417979,
+                "Z": 0.0
+              },
+              "Speed": 7.8639621728052971,
+              "Time": 13.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "267",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "268",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 724.729649327733,
+                "Y": 1440.8124231619365,
+                "Z": 0.0
+              },
+              "Speed": 8.1391346854349855,
+              "Time": 23.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "269",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "270",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 688.19924708168662,
+                "Y": 1397.454909608854,
+                "Z": 0.0
+              },
+              "Speed": 7.92043519278531,
+              "Time": 33.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "271",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "272",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 659.9381610302006,
+                "Y": 1395.0063100519344,
+                "Z": 0.0
+              },
+              "Speed": 8.0314232912689647,
+              "Time": 43.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "273",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "274",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 628.9350222047085,
+                "Y": 1352.5902358518927,
+                "Z": 0.0
+              },
+              "Speed": 7.8795560037675791,
+              "Time": 53.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "275",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "276",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 608.29636511074034,
+                "Y": 1323.9685338838303,
+                "Z": 0.0
+              },
+              "Speed": 8.3371593585782335,
+              "Time": 63.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "277",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "278",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 574.43577010658157,
+                "Y": 1295.668443578935,
+                "Z": 0.0
+              },
+              "Speed": 8.2528699894756379,
+              "Time": 73.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "279",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "280",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 555.57211208148487,
+                "Y": 1283.1267203156619,
+                "Z": 0.0
+              },
+              "Speed": 8.0284403667414637,
+              "Time": 83.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "281",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "282",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 502.9845984811891,
+                "Y": 1238.4772574977753,
+                "Z": 0.0
+              },
+              "Speed": 8.049294921618305,
+              "Time": 93.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 0,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            }
+          ]
+        },
+        "_historyRadarData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "283",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "284",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 802.86655715226789,
+                "Y": 1478.1589833374444,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 1.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "285",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "286",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 794.94124892594255,
+                "Y": 1482.5893875046002,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 4.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "287",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "288",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 764.93652935842215,
+                "Y": 1462.3265833173664,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 7.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "289",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "290",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 775.57455162848612,
+                "Y": 1462.6808260010298,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 10.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "291",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "292",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 752.9938711334828,
+                "Y": 1480.1003870816755,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 13.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "293",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "294",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 756.262360142858,
+                "Y": 1454.1399300524029,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 16.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "295",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "296",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 732.37464911753261,
+                "Y": 1468.6478549038329,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 19.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "297",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "298",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 740.65330838701118,
+                "Y": 1439.1531380946381,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 22.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "299",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "300",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 702.07814667887033,
+                "Y": 1433.8587507411683,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 25.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "301",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "302",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 716.78001223110084,
+                "Y": 1421.0852820493944,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 28.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "303",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "304",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 694.30913353912115,
+                "Y": 1435.3246021324555,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 31.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "305",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "306",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 686.60718194938954,
+                "Y": 1425.5969074296313,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 34.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "307",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "308",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 675.32795975499562,
+                "Y": 1400.8327716139331,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 37.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "309",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "310",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 691.45298928914633,
+                "Y": 1386.6742259118353,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 40.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "311",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "312",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 677.38946708716333,
+                "Y": 1375.6365595534096,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 43.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "313",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "314",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 635.95974822357391,
+                "Y": 1390.0325630341583,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 46.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "315",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "316",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 651.68177907761162,
+                "Y": 1368.123895061892,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 49.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "317",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "318",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 623.416638899822,
+                "Y": 1366.936191277169,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 52.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "319",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "320",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 640.75141195546587,
+                "Y": 1344.3489597947007,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 55.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "321",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "322",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 597.2197270307006,
+                "Y": 1322.9002691021606,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 58.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "323",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "324",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 614.6632779456836,
+                "Y": 1339.1827951771186,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 61.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "325",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "326",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 601.4343314310338,
+                "Y": 1343.4628798086189,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 64.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "327",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "328",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 614.20487179178,
+                "Y": 1300.36355621222,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 67.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "329",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "330",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 571.18933562110078,
+                "Y": 1316.2200929497374,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 70.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "331",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "332",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 590.06308658580656,
+                "Y": 1295.3371641198905,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 73.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "333",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "334",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 567.01154906845534,
+                "Y": 1319.1819244357341,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 76.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "335",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "336",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 537.5696404115015,
+                "Y": 1296.1623608198488,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 79.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "337",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "338",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 554.116665839659,
+                "Y": 1274.9011805083976,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 82.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "339",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "340",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 531.876716091766,
+                "Y": 1253.170474823316,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 85.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "341",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "342",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 510.98409680759812,
+                "Y": 1260.6779651264649,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 88.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "343",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "344",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 518.17509662339842,
+                "Y": 1266.6073982666551,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 91.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "345",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "346",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 510.97641440814942,
+                "Y": 1250.0022939264925,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 94.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            },
+            {
+              "$id": "347",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "Heading": 230.0,
+              "Position": {
+                "$id": "348",
+                "$type": "MathNet.Spatial.Euclidean.Point3D, MathNet.Spatial, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null",
+                "X": 517.68520935061781,
+                "Y": 1224.9437391080969,
+                "Z": 0.0
+              },
+              "Speed": 7.999991061888,
+              "Time": 97.0,
+              "Platform": {
+                "$ref": "262"
+              },
+              "Type": 1,
+              "Rpm": 0.0,
+              "RudderAngle": 0.0
+            }
+          ]
+        },
+        "_historyFusedData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_length": 48.0,
+        "_desiredHeading": 0.0,
+        "_angularVelocity": 0.46401777051576309,
+        "_mmsi": 4444,
+        "_parrent": null,
+        "_children": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Group, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_name": "",
+        "_id": "463e53fc-9e16-4f5d-97c0-2b8c806f3332",
+        "_remarks": null,
+        "_isExpanded": false,
+        "_isSelected": false,
+        "_isVisualized": true,
+        "InitialHeading": 230.0,
+        "InitialY": 1500.000000000256,
+        "InitialX": 800.0,
+        "DisplayName": "Target Ship 3",
+        "ShipType": 0,
+        "Project": {
+          "$ref": "1"
+        },
+        "Speed": 8.0,
+        "MaxRpm": 80.0,
+        "MinRpm": 30.0,
+        "HeadingControlGainP": 1.0,
+        "HeadingControlGainD": 10.0,
+        "SpeedControlGainP": 1.0,
+        "SpeedControlGainI": 3.0,
+        "SpeedControlGainD": 10.0,
+        "ModelType": null,
+        "IsKijimaUsed": false
+      }
+    ]
+  },
+  "Obstacles": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Obstacle, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": []
+  },
+  "ReferenceLat": 37.0,
+  "ReferenceLon": 125.5,
+  "Scenarios": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.ScenarioBase, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": [
+      {
+        "$id": "349",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.ScenarioFollowPath, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "DisplayName": "Follow Path 0",
+        "IsSelected": true,
+        "Parent": {
+          "$ref": "1"
+        },
+        "Tasks": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Tasks.TaskBase, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "350",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Tasks.FollowPath, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "_object1": {
+                "$ref": "2"
+              },
+              "_name": null,
+              "Heading": -0.019098592463669975,
+              "Parent": {
+                "$ref": "349"
+              },
+              "Platform": {
+                "$ref": "2"
+              },
+              "Waypoints": {
+                "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Waypoint, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "$values": [
+                  {
+                    "$id": "351",
+                    "$type": "SyDLab.Usv.Simulator.Domain.Models.Waypoint, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "_y": 0.0,
+                    "_x": 1.0,
+                    "_speed": 0.0,
+                    "_obstacle": null,
+                    "Index": 1
+                  },
+                  {
+                    "$id": "352",
+                    "$type": "SyDLab.Usv.Simulator.Domain.Models.Waypoint, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "_y": 3000.0,
+                    "_x": 0.0,
+                    "_speed": 0.0,
+                    "_obstacle": null,
+                    "Index": 2
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

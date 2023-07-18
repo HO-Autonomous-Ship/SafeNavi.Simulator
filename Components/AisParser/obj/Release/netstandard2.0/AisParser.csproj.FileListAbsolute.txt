@@ -1,0 +1,8 @@
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\bin\Release\netstandard2.0\AisParser.deps.json
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\bin\Release\netstandard2.0\AisParser.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\bin\Release\netstandard2.0\AisParser.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Release\netstandard2.0\AisParser.csproj.AssemblyReference.cache
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Release\netstandard2.0\AisParser.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Release\netstandard2.0\AisParser.csproj.CoreCompileInputs.cache
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Release\netstandard2.0\AisParser.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Release\netstandard2.0\AisParser.pdb

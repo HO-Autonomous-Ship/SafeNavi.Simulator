@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9EMGSXBCaPgRvdcU260Py/mvd7rH2m8t7avm1dj6nqkDBEgMRzXUlq8jJKHI77gQv71+wU6CE7pq5RT1K7kaFQ==",
+  "success": true,
+  "projectFilePath": "D:\\Workspace\\Github\\SAFE NAVIGATION\\Simulator_SNU\\Simulator\\Components\\AisParser\\AisParser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hyeon Seok\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Hyeon Seok\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

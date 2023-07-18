@@ -1,0 +1,24 @@
+C:\Code\SyDLab.AutonomousShip\Components\AisParser\bin\Debug\netstandard2.0\AisParser.deps.json
+C:\Code\SyDLab.AutonomousShip\Components\AisParser\bin\Debug\netstandard2.0\AisParser.dll
+C:\Code\SyDLab.AutonomousShip\Components\AisParser\bin\Debug\netstandard2.0\AisParser.pdb
+C:\Code\SyDLab.AutonomousShip\Components\AisParser\obj\Debug\netstandard2.0\AisParser.csproj.AssemblyReference.cache
+C:\Code\SyDLab.AutonomousShip\Components\AisParser\obj\Debug\netstandard2.0\AisParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\SyDLab.AutonomousShip\Components\AisParser\obj\Debug\netstandard2.0\AisParser.csproj.CoreCompileInputs.cache
+C:\Code\SyDLab.AutonomousShip\Components\AisParser\obj\Debug\netstandard2.0\AisParser.dll
+C:\Code\SyDLab.AutonomousShip\Components\AisParser\obj\Debug\netstandard2.0\AisParser.pdb
+C:\Code\SafeNavi\Simulator\Components\AisParser\bin\Debug\netstandard2.0\AisParser.deps.json
+C:\Code\SafeNavi\Simulator\Components\AisParser\bin\Debug\netstandard2.0\AisParser.dll
+C:\Code\SafeNavi\Simulator\Components\AisParser\bin\Debug\netstandard2.0\AisParser.pdb
+C:\Code\SafeNavi\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.csproj.AssemblyReference.cache
+C:\Code\SafeNavi\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\SafeNavi\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.csproj.CoreCompileInputs.cache
+C:\Code\SafeNavi\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.dll
+C:\Code\SafeNavi\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\bin\Debug\netstandard2.0\AisParser.deps.json
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\bin\Debug\netstandard2.0\AisParser.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\bin\Debug\netstandard2.0\AisParser.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.csproj.AssemblyReference.cache
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.csproj.CoreCompileInputs.cache
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Components\AisParser\obj\Debug\netstandard2.0\AisParser.pdb

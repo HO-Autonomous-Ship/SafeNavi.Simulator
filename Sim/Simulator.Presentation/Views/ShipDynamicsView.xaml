@@ -1,0 +1,145 @@
+﻿<Window x:Class="SyDLab.Usv.Simulator.Presentation.Views.ShipDynamicsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SyDLab.Usv.Simulator.Presentation.Views"
+        mc:Ignorable="d"
+        xmlns:viewModels="clr-namespace:SyDLab.Usv.Simulator.Applications.ViewModels;assembly=SyDLab.Usv.Simulator.Applications"
+        d:DataContext="{d:DesignInstance viewModels:ShipDynamicsViewModel}"
+        Title="ShipDynamicsView" Height="450" Width="600" Closing ="Window_Closing">
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                   FontWeight="Bold"
+                   FontSize="14"
+                   Text="Principle dimensions of own ship" />
+            <Grid Grid.Row="1" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Length [m]: " TextAlignment="Right" VerticalAlignment="Center" Margin="0,7,0,6" />
+                <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Text="{Binding Length}"/>
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Seawater density [kg/m^3]: " TextAlignment="Right" VerticalAlignment="Center" Margin="0,7,0,6" />
+                <TextBox Grid.Row="0" Grid.Column="3" Margin="5" Text="{Binding RhoSea}"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="UNorm [m/s]: " TextAlignment="Right" VerticalAlignment="Center" Margin="0,6" />
+                <TextBox Grid.Row="1" Grid.Column="1" Margin="5" Text="{Binding UNorm}"/>
+                <TextBlock Grid.Row="1" Grid.Column="2" Text="Xg [m]: " TextAlignment="Right" VerticalAlignment="Center" Margin="0,6" />
+                <TextBox Grid.Row="1" Grid.Column="3" Margin="5" Text="{Binding Xg}"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="M [kg]: " TextAlignment="Right" VerticalAlignment="Center" Margin="0,7" />
+                <TextBox Grid.Row="2" Grid.Column="1" Margin="5" Text="{Binding M}"/>
+                <TextBlock Grid.Row="2" Grid.Column="2" Text="Izz [kg*m^2]: " TextAlignment="Right" VerticalAlignment="Center" Margin="0,7" />
+                <TextBox Grid.Row="2" Grid.Column="3" Margin="5" Text="{Binding Izz}"/>
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Max rudder angle [deg]: " TextAlignment="Right" VerticalAlignment="Center" Margin="0,6" />
+                <TextBox Grid.Row="3" Grid.Column="1" Margin="5" Text="{Binding DelSat}"/>
+                <TextBlock Grid.Row="3" Grid.Column="2" Text="Max rudder velocity [deg/s]: " TextAlignment="Right" VerticalAlignment="Center" Margin="0,6" />
+                <TextBox Grid.Row="3" Grid.Column="3" Margin="5" Text="{Binding DelSatDot}"/>
+            </Grid>
+
+            <TextBlock Grid.Row="2"
+                       FontWeight="Bold"
+                       FontSize="14"
+                       Text="Manoeuvring coefficients of own ship" />
+
+            <Grid Grid.Row="3" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Xudot: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Text="{Binding Coefficient.Xudot}"/>
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Xuu: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="0" Grid.Column="3" Margin="5" Text="{Binding Coefficient.Xuu}"/>
+                <TextBlock Grid.Row="0" Grid.Column="4" Text="Xvv: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="0" Grid.Column="5" Margin="5" Text="{Binding Coefficient.Xvv}"/>
+                <TextBlock Grid.Row="0" Grid.Column="6" Text="Xrr: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="0" Grid.Column="7" Margin="5" Text="{Binding Coefficient.Xrr}"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Xvr: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="1" Grid.Column="1" Margin="5" Text="{Binding Coefficient.Xvr}"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Yvdot: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="2" Grid.Column="1" Margin="5" Text="{Binding Coefficient.Yvdot}"/>
+                <TextBlock Grid.Row="2" Grid.Column="2" Text="Yrdot: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="2" Grid.Column="3" Margin="5" Text="{Binding Coefficient.Yrdot}"/>
+                <TextBlock Grid.Row="2" Grid.Column="4" Text="Yv: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="2" Grid.Column="5" Margin="5" Text="{Binding Coefficient.Yv}"/>
+                <TextBlock Grid.Row="2" Grid.Column="6" Text="Yvv: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="2" Grid.Column="7" Margin="5" Text="{Binding Coefficient.Yvv}"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Yr: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="3" Grid.Column="1"  Margin="5" Text="{Binding Coefficient.Yr}"/>
+                <TextBlock Grid.Row="3" Grid.Column="2" Text="Yrr: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="3" Grid.Column="3" Margin="5" Text="{Binding Coefficient.Yrr}"/>
+                <TextBlock Grid.Row="3" Grid.Column="4" Text="Yvrr: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="3" Grid.Column="5" Margin="5" Text="{Binding Coefficient.Yvrr}"/>
+                <TextBlock Grid.Row="3" Grid.Column="6" Text="Yrvv: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="3" Grid.Column="7" Margin="5" Text="{Binding Coefficient.Yrvv}"/>
+
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="Nvdot: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="4" Grid.Column="1" Margin="5" Text="{Binding Coefficient.Nvdot}"/>
+                <TextBlock Grid.Row="4" Grid.Column="2" Text="Nrdot: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="4" Grid.Column="3" Margin="5" Text="{Binding Coefficient.Nrdot}"/>
+                <TextBlock Grid.Row="4" Grid.Column="4" Text="Nv: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="4" Grid.Column="5" Margin="5" Text="{Binding Coefficient.Nv}"/>
+                <TextBlock Grid.Row="4" Grid.Column="6" Text="Nvv: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="4" Grid.Column="7" Margin="5" Text="{Binding Coefficient.Nvv}"/>
+
+                <TextBlock Grid.Row="5" Grid.Column="0" Text="Nr: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="5" Grid.Column="1" Margin="5" Text="{Binding Coefficient.Nr}"/>
+                <TextBlock Grid.Row="5" Grid.Column="2" Text="Nrr: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="5" Grid.Column="3" Margin="5" Text="{Binding Coefficient.Nrr}"/>
+                <TextBlock Grid.Row="5" Grid.Column="4" Text="Nvrr: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="5" Grid.Column="5" Margin="5" Text="{Binding Coefficient.Nvrr}"/>
+                <TextBlock Grid.Row="5" Grid.Column="6" Text="Nrvv: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="5" Grid.Column="7" Margin="5" Text="{Binding Coefficient.Nrvv}"/>
+
+                <TextBlock Grid.Row="6" Grid.Column="0" Text="Xdel: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="6" Grid.Column="1" Margin="5" Text="{Binding Coefficient.Xdel}"/>
+                <TextBlock Grid.Row="6" Grid.Column="2" Text="Xdd: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="6" Grid.Column="3" Margin="5" Text="{Binding Coefficient.Xdd}"/>
+                <TextBlock Grid.Row="6" Grid.Column="4" Text="Ydel: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="6" Grid.Column="5" Margin="5" Text="{Binding Coefficient.Ydel}"/>
+                <TextBlock Grid.Row="6" Grid.Column="6" Text="Ndel: " TextAlignment="Right" VerticalAlignment="Center" />
+                <TextBox Grid.Row="6" Grid.Column="7" Margin="5" Text="{Binding Coefficient.Ndel}"/>
+
+            </Grid>
+            <Button Grid.Row="4" Margin="377,10,9.679,0" Content="Save" Command="{Binding CommandSave}"/>
+
+        </Grid>
+    </DockPanel>
+</Window>

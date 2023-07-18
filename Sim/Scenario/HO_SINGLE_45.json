@@ -1,0 +1,162 @@
+{
+  "$id": "1",
+  "$type": "SyDLab.Usv.Simulator.Domain.Models.Project, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "DisplayName": "Empty Project",
+  "MyShips": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.MyShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": [
+      {
+        "$id": "2",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.MyShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "_parrent": null,
+        "_children": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Group, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_name": "",
+        "_id": "d5e407bd-eecb-4f40-87be-befcd0954139",
+        "_remarks": null,
+        "_isExpanded": false,
+        "_isSelected": false,
+        "_isVisualized": true,
+        "RudderAngle": 0.0,
+        "RudderAngleDot": 0.0,
+        "LimitOfRudderAngle": 35.0,
+        "LimitOfRudderAngleDot": 5.0,
+        "Radius": 1.25,
+        "Interval": 2.0,
+        "Resolution": 50.0,
+        "SeaClutter": false,
+        "InitialHeading": 45.0,
+        "InitialLon": 125.5,
+        "InitialLat": 37.0,
+        "DisplayName": "Own ship",
+        "ShipType": 0,
+        "Project": {
+          "$ref": "1"
+        },
+        "Speed": 15.58049871425564,
+        "HeadingControlGainP": 4.0,
+        "HeadingControlGainD": 8.0,
+        "SpeedControlGainP": 1.0,
+        "SpeedControlGainI": 3.0,
+        "SpeedControlGainD": 10.0
+      }
+    ]
+  },
+  "TargetShips": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.TargetShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": [
+      {
+        "$id": "3",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.Platforms.TargetShip, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "_rangeDistance": 1000.0,
+        "_isAISExists": true,
+        "_isChangeable": false,
+        "_stdDev": 10.0,
+        "_historyAISData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_historyRadarData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_historyFusedData": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Platforms.PlatformState, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_length": 150.0,
+        "_desiredHeading": 0.0,
+        "_angularVelocity": 0.50224565966159362,
+        "_mmsi": 845317723,
+        "_parrent": null,
+        "_children": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Group, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": []
+        },
+        "_name": "",
+        "_id": "3b8998cd-d87b-41a3-82e3-c4f6789dba5c",
+        "_remarks": null,
+        "_isExpanded": false,
+        "_isSelected": false,
+        "_isVisualized": true,
+        "InitialHeading": 180.0,
+        "InitialY": 3000.000000000512,
+        "InitialX": 1500.0,
+        "DisplayName": "Target Ship 0",
+        "ShipType": 0,
+        "Project": {
+          "$ref": "1"
+        },
+        "Speed": 16.0,
+        "HeadingControlGainP": 4.0,
+        "HeadingControlGainD": 8.0,
+        "SpeedControlGainP": 1.0,
+        "SpeedControlGainI": 3.0,
+        "SpeedControlGainD": 10.0
+      }
+    ]
+  },
+  "Obstacles": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Obstacle, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": []
+  },
+  "Scenarios": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.ScenarioBase, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": [
+      {
+        "$id": "4",
+        "$type": "SyDLab.Usv.Simulator.Domain.Models.ScenarioFollowPath, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "DisplayName": "Follow Path 0",
+        "IsSelected": true,
+        "Parent": {
+          "$ref": "1"
+        },
+        "Tasks": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Tasks.TaskBase, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "$values": [
+            {
+              "$id": "5",
+              "$type": "SyDLab.Usv.Simulator.Domain.Models.Tasks.FollowPath, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "_object1": {
+                "$ref": "2"
+              },
+              "_name": "Own ship Follows path",
+              "Heading": 0.0,
+              "Parent": {
+                "$ref": "4"
+              },
+              "Platform": {
+                "$ref": "2"
+              },
+              "Waypoints": {
+                "$type": "System.Collections.ObjectModel.ObservableCollection`1[[SyDLab.Usv.Simulator.Domain.Models.Waypoint, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "$values": [
+                  {
+                    "$id": "6",
+                    "$type": "SyDLab.Usv.Simulator.Domain.Models.Waypoint, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "_y": 0.0,
+                    "_x": 0.0,
+                    "_speed": 0.0,
+                    "_obstacle": null,
+                    "Index": 0
+                  },
+                  {
+                    "$id": "7",
+                    "$type": "SyDLab.Usv.Simulator.Domain.Models.Waypoint, SyDLab.Usv.Simulator.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "_y": 5000.0,
+                    "_x": 5000.0,
+                    "_speed": 0.0,
+                    "_obstacle": null,
+                    "Index": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

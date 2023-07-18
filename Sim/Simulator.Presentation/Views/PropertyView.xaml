@@ -1,0 +1,18 @@
+﻿<UserControl
+	x:Class="SyDLab.Usv.Simulator.Presentation.Views.PropertyView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:SyDLab.Usv.Simulator.Presentation.Views"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:pt="http://propertytools.org/wpf"
+	xmlns:vm="clr-namespace:SyDLab.Usv.Simulator.Applications.ViewModels;assembly=SyDLab.Usv.Simulator.Applications"
+	d:DataContext="{d:DesignInstance vm:PropertyViewModel}"
+	d:DesignHeight="300"
+	d:DesignWidth="300"
+	mc:Ignorable="d">
+	<Grid>
+		<pt:PropertyGrid SelectedObject="{Binding LastSelectedObject}"
+						 TabVisibility="VisibleIfMoreThanOne" />
+	</Grid>
+</UserControl>

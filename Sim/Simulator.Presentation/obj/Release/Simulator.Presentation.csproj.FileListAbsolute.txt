@@ -1,0 +1,222 @@
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\UsvSimulator.exe.config
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\UsvSimulator.exe
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\UsvSimulator.pdb
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\ComplexDataTemplates.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\ControlzEx.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Fluent.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\GMap.NET.Core.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\GMap.NET.WindowsPresentation.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\MathNet.Numerics.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\MathNet.Spatial.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Microsoft.Xaml.Behaviors.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\MultiSelectTreeView.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\OxyPlot.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\OxyPlot.Wpf.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\PropertyTools.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\PropertyTools.Wpf.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Applications.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Domain.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\System.Waf.Core.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\System.Waf.Wpf.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\System.Windows.Interactivity.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Xceed.Wpf.AvalonDock.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Xceed.Wpf.DataGrid.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Xceed.Wpf.Toolkit.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Microsoft.Maps.MapControl.WPF.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Newtonsoft.Json.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\MultiSelectTreeView.pdb
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Applications.pdb
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Domain.pdb
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\ControlzEx.pdb
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Fluent.pdb
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Fluent.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\MathNet.Numerics.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\MathNet.Spatial.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Microsoft.Xaml.Behaviors.pdb
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Microsoft.Xaml.Behaviors.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\OxyPlot.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\OxyPlot.Wpf.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\System.Waf.Core.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\System.Waf.Wpf.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Microsoft.Maps.MapControl.WPF.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\Newtonsoft.Json.xml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.AssemblyReference.cache
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.SuggestedBindingRedirects.cache
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\PlatformEditorWindow.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\RadarView.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\ShellWindow.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\App.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\DetectedMineMarker.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\EndMarker.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\MineMarker.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\StartMarker.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\PortMarker.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\MyShipMarker.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\TargetShipMarker.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\WaypointMarker.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\GraphView.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\MapView.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\ModelBuilderView.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\ObstacleEditorWindow.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\PlatformEditorWindow.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\PropertyView.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\RadarView.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\SettingView.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\ShellWindow.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\ShipDynamicsView.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\TerminalView.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\App.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\UsvSimulator_MarkupCompile.cache
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\UsvSimulator_MarkupCompile.lref
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\DetectedMineMarker.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\EndMarker.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\MineMarker.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\StartMarker.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\PortMarker.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\MyShipMarker.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\TargetShipMarker.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Resources\Markers\WaypointMarker.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\GraphView.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\MapView.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\ModelBuilderView.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\ObstacleEditorWindow.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\PropertyView.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\SettingView.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\ShipDynamicsView.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Views\TerminalView.baml
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\UsvSimulator.g.resources
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\SyDLab.Usv.Simulator.Presentation.Properties.Resources.resources
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.GenerateResource.cache
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.CoreCompileInputs.cache
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.CopyComplete
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\UsvSimulator.exe
+C:\Code\SyDLab.Sensorfusion\SyDLab.Usv\Simulator.Presentation\obj\Release\UsvSimulator.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\UsvSimulator.exe.config
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\UsvSimulator.exe
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\UsvSimulator.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\ComplexDataTemplates.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\ControlzEx.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Fluent.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\GMap.NET.Core.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\GMap.NET.WindowsPresentation.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\MathNet.Numerics.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\MathNet.Spatial.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Microsoft.Xaml.Behaviors.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\MultiSelectTreeView.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\OxyPlot.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\OxyPlot.Wpf.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\OxyPlot.Wpf.Shared.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\PropertyTools.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\PropertyTools.Wpf.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Applications.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Domain.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\System.Waf.Core.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\System.Waf.Wpf.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\System.Windows.Interactivity.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Xceed.Wpf.AvalonDock.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Xceed.Wpf.DataGrid.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Xceed.Wpf.Toolkit.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Microsoft.Maps.MapControl.WPF.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\NmeaParser.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Newtonsoft.Json.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\AisParser.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\MultiSelectTreeView.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Applications.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Applications.dll.config
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\SyDLab.Usv.Simulator.Domain.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\ControlzEx.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Fluent.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Fluent.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\MathNet.Numerics.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\MathNet.Spatial.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Microsoft.Xaml.Behaviors.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Microsoft.Xaml.Behaviors.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\OxyPlot.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\OxyPlot.Wpf.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\OxyPlot.Wpf.Shared.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\System.Waf.Core.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\System.Waf.Wpf.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Microsoft.Maps.MapControl.WPF.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\NmeaParser.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\Newtonsoft.Json.xml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\AisParser.pdb
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.AssemblyReference.cache
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\PlatformEditorWindow.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\RadarView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\ShellWindow.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\App.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\DetectedMineMarker.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\EndMarker.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\MineMarker.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\StartMarker.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\PortMarker.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\MyShipMarker.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\TargetShipMarker.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\WaypointMarker.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\GraphView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\MapView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\ModelBuilderView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\MonitorView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\ObstacleEditorWindow.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\PlatformEditorWindow.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\PropertyView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\RadarView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\SettingView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\ShellWindow.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\ShipDynamicsView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\TerminalView.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\App.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\UsvSimulator_MarkupCompile.cache
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\UsvSimulator_MarkupCompile.lref
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\DetectedMineMarker.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\EndMarker.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\MineMarker.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\StartMarker.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\PortMarker.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\MyShipMarker.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\TargetShipMarker.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Resources\Markers\WaypointMarker.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\GraphView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\MapView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\ModelBuilderView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\MonitorView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\ObstacleEditorWindow.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\PropertyView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\SettingView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\ShipDynamicsView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Views\TerminalView.baml
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\UsvSimulator.g.resources
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\SyDLab.Usv.Simulator.Presentation.Properties.Resources.resources
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.GenerateResource.cache
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.CoreCompileInputs.cache
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\Simulator.Presentation.csproj.CopyComplete
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\UsvSimulator.exe
+D:\Workspace\Github\SAFE NAVIGATION\Simulator_SNU\Simulator\Sim\Simulator.Presentation\obj\Release\UsvSimulator.pdb

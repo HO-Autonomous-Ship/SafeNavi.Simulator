@@ -1,0 +1,225 @@
+﻿<UserControl
+    x:Class="SyDLab.Usv.Simulator.Presentation.Views.ModelBuilderView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:c="clr-namespace:SyDLab.Usv.Simulator.Presentation.Converters"
+    xmlns:complex="clr-namespace:DaisleyHarrison.WPF.ComplexDataTemplates;assembly=ComplexDataTemplates"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SyDLab.Usv.Simulator.Presentation.Views"
+    xmlns:m="clr-namespace:SyDLab.Usv.Simulator.Domain.Models;assembly=SyDLab.Usv.Simulator.Domain"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:platforms="clr-namespace:SyDLab.Usv.Simulator.Domain.Models.Platforms;assembly=SyDLab.Usv.Simulator.Domain"
+    xmlns:t="clr-namespace:System.Windows.Controls;assembly=MultiSelectTreeView"
+    xmlns:tasks="clr-namespace:SyDLab.Usv.Simulator.Domain.Models.Tasks;assembly=SyDLab.Usv.Simulator.Domain"
+    xmlns:viewModels="clr-namespace:SyDLab.Usv.Simulator.Applications.ViewModels;assembly=SyDLab.Usv.Simulator.Applications"
+    d:DataContext="{d:DesignInstance viewModels:ModelBuilderViewModel}"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <complex:ComplexGroupDataTemplateSelector x:Key="ComplexGroupDataTemplateSelector" />
+        <complex:ComplexGroupConverter x:Key="ComplexGroupConverter" />
+    </UserControl.Resources>
+    <DockPanel>
+        <t:MultiSelectTreeView
+            x:Name="TreeView"
+            AllowEditItems="True"
+            ItemTemplateSelector="{StaticResource ComplexGroupDataTemplateSelector}"
+            ItemsSource="{Binding Nodes}"
+            SelectedItems="{Binding SelectedObjects}">
+            <t:MultiSelectTreeView.ItemContainerStyle>
+                <Style TargetType="{x:Type t:MultiSelectTreeViewItem}">
+                    <Setter Property="IsExpanded" Value="True" />
+                </Style>
+            </t:MultiSelectTreeView.ItemContainerStyle>
+            <t:MultiSelectTreeView.Resources>
+                <!--  Project  -->
+                <HierarchicalDataTemplate DataType="{x:Type m:Project}">
+                    <HierarchicalDataTemplate.ItemsSource>
+                        <MultiBinding Converter="{StaticResource ComplexGroupConverter}">
+                            <Binding Path="MyShips" />
+                            <Binding Path="TargetShips" />
+                            <Binding Path="Obstacles" />
+                            <Binding Path="Scenarios" />
+                        </MultiBinding>
+                    </HierarchicalDataTemplate.ItemsSource>
+                    <HierarchicalDataTemplate.ItemContainerStyle>
+                        <Style TargetType="{x:Type t:MultiSelectTreeViewItem}">
+                            <Setter Property="IsEditable" Value="False" />
+                            <Setter Property="IsExpanded" Value="True" />
+                        </Style>
+                    </HierarchicalDataTemplate.ItemContainerStyle>
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/GameMonitor16.png" />
+                        <TextBlock Padding="4,0,2,0" Text="{Binding DisplayName}" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+                <!--  My Ships  -->
+                <HierarchicalDataTemplate x:Key="IEnumerable[MyShip]" ItemsSource="{Binding Path=.}">
+                    <HierarchicalDataTemplate.ItemContainerStyle>
+                        <Style TargetType="{x:Type t:MultiSelectTreeViewItem}">
+                            <Setter Property="IsEditable" Value="True" />
+                            <Setter Property="IsExpanded" Value="True" />
+                        </Style>
+                    </HierarchicalDataTemplate.ItemContainerStyle>
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/Bricks16.png" />
+                        <TextBlock Padding="4,0,2,0" Text="My Ship" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+                <!--  My ship  -->
+                <DataTemplate DataType="{x:Type platforms:MyShip}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/helm.png" />
+                        <TextBlock Padding="4,0,2,0" Text="{Binding DisplayName}" />
+                    </StackPanel>
+                </DataTemplate>
+                <!--  Target ships  -->
+                <HierarchicalDataTemplate x:Key="IEnumerable[TargetShip]" ItemsSource="{Binding Path=.}">
+                    <HierarchicalDataTemplate.ItemContainerStyle>
+                        <Style TargetType="{x:Type t:MultiSelectTreeViewItem}">
+                            <Setter Property="IsEditable" Value="True" />
+                            <Setter Property="IsExpanded" Value="True" />
+                        </Style>
+                    </HierarchicalDataTemplate.ItemContainerStyle>
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/Bricks16.png" />
+                        <TextBlock Padding="4,0,2,0" Text="Target Ships" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+                <!--  Target ship  -->
+                <DataTemplate DataType="{x:Type platforms:TargetShip}">
+                    <StackPanel Orientation="Horizontal" Tag="{Binding DataContext, RelativeSource={RelativeSource AncestorType=local:ModelBuilderView}}">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/Sail-Boat-48.png" />
+                        <TextBlock Padding="4,0,2,0" Text="{Binding DisplayName}" />
+                        <StackPanel.ContextMenu>
+                            <ContextMenu DataContext="{Binding PlacementTarget.Tag, RelativeSource={RelativeSource Self}}">
+                                <MenuItem Command="{Binding CommandDelete}" Header="Remove">
+                                    <MenuItem.Icon>
+                                        <Image
+                                            Width="16"
+                                            Height="16"
+                                            Source="/UsvSimulator;component/Resources/Images/cancel.png" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem Command="{Binding CommandSaveTrack}" Header="Save" />
+                            </ContextMenu>
+                        </StackPanel.ContextMenu>
+                    </StackPanel>
+                </DataTemplate>
+
+                <!--  Obstacles  -->
+                <HierarchicalDataTemplate x:Key="IEnumerable[Obstacle]" ItemsSource="{Binding Path=.}">
+                    <HierarchicalDataTemplate.ItemContainerStyle>
+                        <Style TargetType="{x:Type t:MultiSelectTreeViewItem}">
+                            <Setter Property="IsEditable" Value="True" />
+                            <Setter Property="IsExpanded" Value="True" />
+                        </Style>
+                    </HierarchicalDataTemplate.ItemContainerStyle>
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/Bricks16.png" />
+                        <TextBlock Padding="4,0,2,0" Text="Obstacles" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+                <!--  Obstacles  -->
+                <DataTemplate DataType="{x:Type m:Obstacle}">
+                    <StackPanel Orientation="Horizontal" Tag="{Binding DataContext, RelativeSource={RelativeSource AncestorType=local:ModelBuilderView}}">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/mountains.png" />
+                        <TextBlock Padding="4,0,2,0" Text="{Binding DisplayName}" />
+                        <StackPanel.ContextMenu>
+                            <ContextMenu DataContext="{Binding PlacementTarget.Tag, RelativeSource={RelativeSource Self}}">
+                                <MenuItem Command="{Binding CommandDelete}" Header="Remove">
+                                    <MenuItem.Icon>
+                                        <Image
+                                            Width="16"
+                                            Height="16"
+                                            Source="/UsvSimulator;component/Resources/Images/cancel.png" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </ContextMenu>
+                        </StackPanel.ContextMenu>
+                    </StackPanel>
+                </DataTemplate>
+                <!--  Scenarios  -->
+                <HierarchicalDataTemplate x:Key="IEnumerable[ScenarioBase]" ItemsSource="{Binding Path=.}">
+                    <HierarchicalDataTemplate.ItemContainerStyle>
+                        <Style TargetType="{x:Type t:MultiSelectTreeViewItem}">
+                            <Setter Property="IsEditable" Value="True" />
+                            <Setter Property="IsExpanded" Value="True" />
+                        </Style>
+                    </HierarchicalDataTemplate.ItemContainerStyle>
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/ScriptsText16.png" />
+                        <TextBlock Padding="4,0,2,0" Text="Scenarios" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+                <!--  Scenario: FollowPath  -->
+                <HierarchicalDataTemplate DataType="{x:Type m:ScenarioFollowPath}" ItemsSource="{Binding Tasks}">
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding IsSelected}" />
+                        <TextBlock Text=" " />
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="/UsvSimulator;component/Resources/Images/Controller16.png" />
+                        <TextBlock Padding="4,0,2,0" Text="{Binding DisplayName}" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+                <!--  Task: FollowPath  -->
+                <DataTemplate DataType="{x:Type tasks:FollowPath}">
+                    <StackPanel Orientation="Horizontal" Tag="{Binding DataContext, RelativeSource={RelativeSource AncestorType=local:ModelBuilderView}}">
+                        <Image Width="16"
+                               Height="16"
+                               Source="/UsvSimulator;component/Resources/Images/Controller16.png" />
+                        <TextBlock Padding="4,0,2,0"
+                                   Text="{Binding DisplayName}" />
+                        <!-- <TextBlock Padding="4,0,2,0"> -->
+                        <!--     <TextBlock.Text> -->
+                        <!--         <MultiBinding StringFormat="{} {0} Follows Path"> -->
+                        <!--             <Binding Path="Platform.DisplayName" /> -->
+                        <!--         </MultiBinding> -->
+                        <!--     </TextBlock.Text></TextBlock> -->
+
+                        <StackPanel.ContextMenu>
+                            <ContextMenu DataContext="{Binding PlacementTarget.Tag, RelativeSource={RelativeSource Self}}">
+                                <MenuItem Command="{Binding CommandDelete}" Header="Remove">
+                                    <MenuItem.Icon>
+                                        <Image
+                                            Width="16"
+                                            Height="16"
+                                            Source="/UsvSimulator;component/Resources/Images/cancel.png" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </ContextMenu>
+                        </StackPanel.ContextMenu>
+                    </StackPanel>
+                    
+                </DataTemplate>
+            </t:MultiSelectTreeView.Resources>
+        </t:MultiSelectTreeView>
+    </DockPanel>
+</UserControl>

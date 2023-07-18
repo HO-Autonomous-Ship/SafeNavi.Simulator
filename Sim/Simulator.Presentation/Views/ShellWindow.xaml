@@ -1,0 +1,280 @@
+﻿<r:RibbonWindow x:Class="SyDLab.Usv.Simulator.Presentation.Views.ShellWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:r="urn:fluent-ribbon"
+                xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
+                Width="1000"
+                Height="600"
+                WindowState="Maximized"
+                Closing="RibbonWindow_Closing"
+                mc:Ignorable="d">
+    <r:RibbonWindow.Title>
+        <MultiBinding StringFormat="{}UsvSimulator - &quot;{0}&quot;">
+            <Binding Path="ProjectFileName" />
+        </MultiBinding>
+    </r:RibbonWindow.Title>
+    <DockPanel>
+        <r:Ribbon DockPanel.Dock="Top">
+            <r:RibbonTabItem Header="HOME"
+                             FontFamily="Calibri"
+                             FontSize="12">
+                <!--  File Group  -->
+                <r:RibbonGroupBox Header="File">
+                    <r:Button x:Name="ButtonNew"
+                              Command="{Binding CommandCreateProject}"
+                              Header="New"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/DocumentEmpty32.png" />
+                    <r:Button x:Name="ButtonLoad"
+                              Command="{Binding CommandLoadProject}"
+                              Header="Load"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/FolderVerticalOpen32.png" />
+                    <r:Button x:Name="ButtonSave"
+                              Command="{Binding CommandSaveProject}"
+                              Header="Save"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/Diskette32.png" />
+                </r:RibbonGroupBox>
+                <!--  Platform Group  -->
+                <r:RibbonGroupBox Header="Modeling">
+                    <r:Button x:Name="ButtonCreatePlatform"
+                              Command="{Binding CommandCreatePlatform}"
+                              Header="New Ship"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/BrickAdd32.png" />
+
+                    <r:Button x:Name="ButtonRearrangeMines"
+                              Command="{Binding CommandRearrangeShips}"
+                              Header="Rearrange Ships"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/TokenQuantifier32.png" />
+                    
+                    <r:Button x:Name="ButtonCreateObstacle"
+                              Command="{Binding CommandCreateObstacle}"
+                              Header="Create Obstacle"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/BrickAdd32.png" />
+                    <r:Button x:Name="ButtonShipSetting"
+                              Command="{Binding CommandShipDynamics}"
+                              Header="Ship Dynamics"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/Settings.png"></r:Button>
+                </r:RibbonGroupBox>
+                <!--  Scenario Group  -->
+                <r:RibbonGroupBox Header="Scenario">
+                    <r:Button Command="{Binding CommandCreateScenarioFollowPath}"
+                              Header="Follow Path"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/ControllerAdd32.png" />
+                    <r:Button Command="{Binding CommandCreateTaskFollowPath}"
+                              Header="Add Ship"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/AddOn32.png" />
+                </r:RibbonGroupBox>
+                <!--  Player Group  -->
+                <r:RibbonGroupBox x:Name="Player"
+                                  Header="Player">
+                    <r:Button x:Name="ButtonPlay"
+                              Command="{Binding CommandPlay}"
+                              Header="Play"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/ControlPlay32.png" />
+                    <!--<r:Button x:Name="ButtonPause"
+							  LargeIcon="/UsvSimulator;component/Resources/Images/ControlPause32.png"
+							  Header="Pause"
+							  Command="{Binding CommandPause}" />-->
+                    <r:Button x:Name="ButtonPause"
+                              Command="{Binding CommandPause}"
+                              Header="Pause"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/ControlPause32.png" />
+                    <r:Button x:Name="ButtonStop"
+                              Command="{Binding CommandStop}"
+                              CommandParameter="True"
+                              Header="Stop"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/ControlStop32.png" />
+                </r:RibbonGroupBox>
+                <r:RibbonGroupBox VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <!--<Image HorizontalAlignment="Right" Height="82" VerticalAlignment="Center" Width="200" Source="/UsvSimulator;component/Resources/Images/DSME_SyDLab.png" RenderOptions.BitmapScalingMode="HighQuality"/>-->
+                    <Image HorizontalAlignment="Right" Height="82" VerticalAlignment="Center" Width="320" Source="/UsvSimulator;component/Resources/Images/HanwhaOcean_SyDLab.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                </r:RibbonGroupBox>
+                <r:RibbonGroupBox Header="Controller">
+                    <r:CheckBox Name="ExtCtrl" 
+                                IsChecked="{Binding ExternalControllerChecked}">
+                        <TextBlock Text="Ext. Ctrl"/>
+                    </r:CheckBox>
+                </r:RibbonGroupBox>
+                <r:RibbonGroupBox Header="Comm.">
+                    <r:Button x:Name="ButtonSetting"
+                              Command="{Binding CommSetting}"
+                              Header="Setting"
+                              LargeIcon="/UsvSimulator;component/Resources/Images/Setting32.png" />
+                </r:RibbonGroupBox>
+                <r:RibbonGroupBox Header="Simulation">
+                    <TextBlock Text="Sim. Speed"/>
+                    <r:ComboBox x:Name="Speed"
+                                ItemsSource="{Binding SimulationSpeed}"
+                                SelectedItem="{Binding SelectedSimulationSpeed, Mode=TwoWay}"/>
+                </r:RibbonGroupBox>
+                    <!--<r:RibbonGroupBox Header="Options">
+					<r:CheckBox Header="Line Wrap" IsChecked="{Binding IsLineWrapped}" />
+				</r:RibbonGroupBox>-->
+                <r:RibbonGroupBox Header="...">
+                    <r:Button x:Name="ButtonGetPosition"
+                              Command="{Binding CommandSetReference}"
+                              Header="Set Reference Position w/ Ownship"/>
+                    <r:CheckBox x:Name="ConnectedVDO"
+                                IsChecked="{Binding ConnectedVdoChecked}">
+                        <TextBlock Text="Connect VDO"/>
+                    </r:CheckBox>
+                    <r:CheckBox x:Name="ConnectedVDM"
+                                IsChecked="{Binding ConnectedVdmChecked}">
+                        <TextBlock Text="Connect VDM"/>
+                    </r:CheckBox>
+                    <r:CheckBox x:Name="SendOutVDO"
+                                IsChecked="{Binding SendoutVdoChecked}">
+                        <TextBlock Text="Send VDO"/>
+                    </r:CheckBox>
+                    <r:CheckBox x:Name="SendOutVDM"
+                                IsChecked="{Binding SendoutVdmChecked}">
+                        <TextBlock Text="Send VDM"/>
+                    </r:CheckBox>
+                    <r:CheckBox x:Name="SimpleVer"
+                                IsChecked="{Binding SimpleVersionChecked}">
+                        <TextBlock Text="Simple Ver."/>
+                    </r:CheckBox>
+                </r:RibbonGroupBox>
+            </r:RibbonTabItem>
+        </r:Ribbon>
+        <!--  Progress Bar  -->
+        <Grid HorizontalAlignment="Stretch"
+              DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0"
+                       Margin="3"
+                       Padding="3"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Center"
+                       Text="Time:" />
+            <DockPanel Grid.Column="1">
+                <TextBlock Margin="0,3,3,3"
+                           Padding="3"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           DockPanel.Dock="Right"
+                           Text="s" />
+                <TextBox Margin="3"
+                         Padding="3"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         Text="{Binding ElementName=SliderTime, Path=Value, StringFormat={}{0:0.00}}"
+                         TextAlignment="Right" />
+            </DockPanel>
+            <TextBlock Grid.Column="2"
+                       Margin="3"
+                       Padding="3"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Center"
+                       Text="0.0 s" />
+            <Slider x:Name="SliderTime"
+                    Grid.Column="3"
+                    Margin="3"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    IsSnapToTickEnabled="True"
+                    Maximum="{Binding MaxTime}"
+                    Minimum="0"
+                    TickFrequency="0.001"
+                    Value="{Binding CurrentTime, Mode=TwoWay}" />
+            <TextBlock Grid.Column="4"
+                       Margin="3"
+                       Padding="3"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text="{Binding MaxTime, StringFormat={}{0} s}" />
+            <Button Grid.Column="9"
+                    Margin="3"
+                    Padding="3"
+                    Command="{Binding CommandConnect}"
+                    Content="{Binding ConnectedOrNot}" />
+        </Grid>
+        <r:StatusBar VerticalAlignment="Bottom"
+                     DockPanel.Dock="Bottom">
+            <r:StatusBarItem Title="Message"
+                             Margin="3"
+                             HorizontalAlignment="Left"
+                             Value="300">
+                <TextBlock Text="" />
+            </r:StatusBarItem>
+            <Separator HorizontalAlignment="Left" />
+        </r:StatusBar>
+        <xcad:DockingManager x:Name="DockManager"
+                             AllowMixedOrientation="True"
+                             BorderBrush="Black">
+            <xcad:DockingManager.AnchorableContextMenu>
+                <ContextMenu>
+                    <MenuItem Command="{Binding Path=FloatCommand}"
+                              Header="Float" />
+                    <MenuItem Command="{Binding Path=DockCommand}"
+                              Header="Dock" />
+                    <MenuItem Command="{Binding Path=AutoHideCommand}"
+                              Header="Auto Hide" />
+                </ContextMenu>
+            </xcad:DockingManager.AnchorableContextMenu>
+            <xcad:LayoutRoot x:Name="LayoutRoot">
+                <xcad:LayoutPanel Orientation="Horizontal">
+                    <!--  Left Menu  -->
+                    <xcad:LayoutAnchorablePaneGroup DockWidth="300"
+                                                    Orientation="Vertical">
+                        <xcad:LayoutAnchorablePane>
+                            <xcad:LayoutAnchorable Title="Model Builder"
+                                                   CanClose="False"
+                                                   CanHide="False"
+                                                   IsMaximized="True">
+                                <ContentPresenter Content="{Binding ContentModelBuilderView}" />
+                            </xcad:LayoutAnchorable>
+                        </xcad:LayoutAnchorablePane>
+                    </xcad:LayoutAnchorablePaneGroup>
+                    <xcad:LayoutPanel Orientation="Vertical">
+                        <xcad:LayoutDocumentPane x:Name="DocumentsHost">
+                            <xcad:LayoutDocument Title="Map" CanClose="False">
+                                <ContentPresenter Content="{Binding ContentMapView}" />
+                            </xcad:LayoutDocument>
+                            <xcad:LayoutDocument Title="Radar" CanClose="False">
+								<ContentPresenter Content="{Binding ContentRadarView}" />
+							</xcad:LayoutDocument>
+                            <xcad:LayoutDocument Title="Graphs" CanClose="False">
+                                <ContentPresenter Content="{Binding ContentGraphView}" />
+                            </xcad:LayoutDocument>
+                        </xcad:LayoutDocumentPane>
+                        <xcad:LayoutAnchorablePane DockHeight="150">
+                            <xcad:LayoutAnchorable Title="Terminal"
+                                                   CanClose="False"
+                                                   CanHide="False"
+                                                   IsMaximized="True">
+                                <ContentPresenter Content="{Binding ContentTerminalView}" />
+                            </xcad:LayoutAnchorable>
+                        </xcad:LayoutAnchorablePane>
+                    </xcad:LayoutPanel>
+                    <xcad:LayoutAnchorablePaneGroup DockWidth="300">
+                        <xcad:LayoutAnchorablePane DockWidth="300">
+                            <xcad:LayoutAnchorable Title="Monitor"
+                                                   CanClose="False"
+                                                   CanHide="False">
+                                <ContentPresenter Content="{Binding ContentMonitorView}"/>
+                            </xcad:LayoutAnchorable>
+                            <xcad:LayoutAnchorable Title="Properties"
+                                                   CanClose="False"
+                                                   CanHide="False">
+                                <ContentPresenter Content="{Binding ContentPropertyView}" />
+                            </xcad:LayoutAnchorable>
+                        </xcad:LayoutAnchorablePane>
+                    </xcad:LayoutAnchorablePaneGroup>
+                </xcad:LayoutPanel>
+            </xcad:LayoutRoot>
+        </xcad:DockingManager>
+    </DockPanel>
+</r:RibbonWindow>   

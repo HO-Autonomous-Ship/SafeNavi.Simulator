@@ -1,0 +1,192 @@
+﻿<UserControl
+	x:Class="SyDLab.Usv.Simulator.Presentation.Views.MapView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:SyDLab.Usv.Simulator.Presentation.Views"
+	xmlns:m="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vm="clr-namespace:SyDLab.Usv.Simulator.Applications.ViewModels;assembly=SyDLab.Usv.Simulator.Applications"
+	d:DataContext="{d:DesignInstance vm:MapViewModel}"
+	d:DesignHeight="300"
+	d:DesignWidth="300"
+	mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="ZoomInButton" TargetType="Button">
+			<Setter Property="Width" Value="23.5" />
+			<Setter Property="Height" Value="25.5" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid Width="23.5" Height="25.5">
+							<Image Source="/UsvSimulator;component/Resources/Images/ZoomIn32.png" Stretch="Fill" />
+							<ContentPresenter HorizontalAlignment="Center" />
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Setter Property="Effect">
+									<Setter.Value>
+										<DropShadowEffect ShadowDepth="2" />
+									</Setter.Value>
+								</Setter>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="ZoomOutButton" TargetType="Button">
+			<Setter Property="Width" Value="23.5" />
+			<Setter Property="Height" Value="25.5" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid Width="23.5" Height="25.5">
+							<Image Source="/UsvSimulator;component/Resources/Images/ZoomOut32.png" Stretch="Fill" />
+							<ContentPresenter HorizontalAlignment="Center" />
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Setter Property="Effect">
+									<Setter.Value>
+										<DropShadowEffect ShadowDepth="2" />
+									</Setter.Value>
+								</Setter>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</UserControl.Resources>
+    <DockPanel>
+		<!-- <ToolBar  Name="ToolBar" -->
+  <!--                 Background="White" -->
+  <!--                 BorderBrush="LightGray" -->
+  <!--                 BorderThickness="1" -->
+  <!--                 DockPanel.Dock="Top" -->
+  <!--                 ToolBarTray.IsLocked="True"> -->
+  <!--           <RadioButton Name="SpaceFixed" -->
+  <!--                        ToolTip="Fix Space"> -->
+  <!--               <Image Width="16" -->
+  <!--                      Height="16" -->
+  <!--                      Source="/Resources/Images/SpaceFixed.png" /> -->
+  <!--           </RadioButton> -->
+  <!--           <RadioButton Name="ShipHeadingFixed" -->
+  <!--                        IsChecked="False"  -->
+  <!--                        ToolTip="Fix Ship heading"> -->
+  <!--               <Image Width="16" -->
+  <!--                      Height="16" -->
+  <!--                      Source="/Resources/Images/ShipFixed.png" /> -->
+  <!--           </RadioButton> -->
+  <!--           <Separator /> -->
+  <!--           <Button Name="MapCenterFixed" -->
+  <!--                   Click="MapCenterFixed_OnClick" -->
+  <!--                   ToolTip="Focus to own ship" -->
+  <!--           > -->
+  <!--               <Image Width="16" -->
+  <!--                      Height="16" -->
+  <!--                      Source="/Resources/Images/CenterFix.png" /> -->
+  <!--           </Button> -->
+  <!--           <ToggleButton Name="MapMoving" -->
+  <!--                         IsChecked="True"  -->
+  <!--                         ToolTip="Follow own ship"> -->
+  <!--               <Image Width="16" -->
+  <!--                      Height="16" -->
+  <!--                      Source="/Resources/Images/moving.png" /> -->
+  <!--           </ToggleButton> -->
+  <!--       </ToolBar> -->
+        <Grid DockPanel.Dock="Right">
+			<Button
+				x:Name="ZoomInButton"
+				Margin="3"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Top"
+				Click="ZoomInButton_OnClick"
+				Style="{StaticResource ZoomInButton}" />
+			<Slider
+				x:Name="ZoomSlider"
+				Margin="3,35,3,35"
+				HorizontalAlignment="Center"
+				Maximum="15"
+				Minimum="5"
+				Orientation="Vertical"
+				SmallChange="1"
+				TickPlacement="Both"
+				Value="{Binding ElementName=Map, Path=Zoom}" />
+			<Button
+				x:Name="ZoomOutButton"
+				Margin="3"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Bottom"
+				Click="ZoomOutButton_OnClick"
+				Style="{StaticResource ZoomOutButton}" />
+		</Grid>
+		<Grid>
+			<Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="30" />
+                <RowDefinition />
+			</Grid.RowDefinitions>
+
+            <ToolBar Name="toolBar"
+                     Background="White"
+                     BorderBrush="LightGray"
+                     BorderThickness="1"
+                     DockPanel.Dock="Top"
+                     ToolBarTray.IsLocked="True">
+                <ToggleButton Name="ShipHeadingFixed"
+							  IsChecked="{Binding IsHeadingFixed}"
+							  Checked="toggleButton_IsCheckedChanged"
+							  Unchecked="toggleButton_IsCheckedChanged"
+                              ToolTip="Fix Ship heading">
+                    <Image Width="16"
+                           Height="16"
+                           Source="/Resources/Images/ShipFixed.png" />
+                </ToggleButton>
+                <ToggleButton Name="MapCenterFixed"
+                              Checked="MapCenterFixed_OnClick"
+                              Unchecked="MapCenterFixed_OnClick"
+                              ToolTip="Focus to own ship"
+                >
+                    <Image Width="16"
+                           Height="16"
+                           Source="/Resources/Images/CenterFix.png" />
+                </ToggleButton>
+            </ToolBar>
+            <m:GMapControl
+				x:Name="Map"
+                Grid.Row="2"
+				MaxZoom="30"
+				MinZoom="5"
+				PreviewMouseRightButtonUp="Map_OnPreviewMouseRightButtonUp"
+				MouseLeftButtonDown="Map_MouseLeftButtonDown"
+				Zoom="5">
+				<!-- <m:GMapControl.ContextMenu> -->
+				<!-- 	<ContextMenu> -->
+				<!-- 		<MenuItem -->
+				<!-- 			Command="{Binding CommandSetStartPoint}" -->
+				<!-- 			Header="Set As Start Point" -->
+				<!-- 			Icon="/UsvSimulator;component/Resources/Images/FlagGreen16.png" /> -->
+				<!-- 		<MenuItem -->
+				<!-- 			Command="{Binding CommandSetEndPoint}" -->
+				<!-- 			Header="Set As End Point" -->
+				<!-- 			Icon="/UsvSimulator;component/Resources/Images/FlagFinish16.png" /> -->
+				<!-- 		<MenuItem -->
+				<!-- 			Command="{Binding CommandSetPortPosition}" -->
+				<!-- 			Header="Set As Port Position" -->
+				<!-- 			Icon="/UsvSimulator;component/Resources/Images/Anchor16.png" /> -->
+				<!-- 	</ContextMenu> -->
+				<!-- </m:GMapControl.ContextMenu> -->
+			</m:GMapControl>
+			<TextBlock
+				x:Name="CurrentLatLngTextBlock"
+				Grid.Row="1"
+				Margin="5,5,0,0"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+				Text="Latitude = 0.00, Longitude = 0.00"
+				d:LayoutOverrides="HorizontalAlignment" />
+		</Grid>
+	</DockPanel>
+</UserControl>
