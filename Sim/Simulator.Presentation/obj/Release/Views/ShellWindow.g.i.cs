@@ -209,7 +209,7 @@ namespace SyDLab.Usv.Simulator.Presentation.Views {
         #line hidden
         
         
-        #line 182 "..\..\..\Views\ShellWindow.xaml"
+        #line 184 "..\..\..\Views\ShellWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Slider SliderTime;
         
@@ -217,7 +217,7 @@ namespace SyDLab.Usv.Simulator.Presentation.Views {
         #line hidden
         
         
-        #line 214 "..\..\..\Views\ShellWindow.xaml"
+        #line 260 "..\..\..\Views\ShellWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal Xceed.Wpf.AvalonDock.DockingManager DockManager;
         
@@ -225,7 +225,7 @@ namespace SyDLab.Usv.Simulator.Presentation.Views {
         #line hidden
         
         
-        #line 227 "..\..\..\Views\ShellWindow.xaml"
+        #line 273 "..\..\..\Views\ShellWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal Xceed.Wpf.AvalonDock.Layout.LayoutRoot LayoutRoot;
         
@@ -233,7 +233,7 @@ namespace SyDLab.Usv.Simulator.Presentation.Views {
         #line hidden
         
         
-        #line 242 "..\..\..\Views\ShellWindow.xaml"
+        #line 288 "..\..\..\Views\ShellWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal Xceed.Wpf.AvalonDock.Layout.LayoutDocumentPane DocumentsHost;
         
